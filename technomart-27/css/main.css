@@ -357,6 +357,7 @@ li a {
 .nav_item {
   padding: 20px 33px;
   display: inline-block;
+  vertical-align: top;
 }
 
 .nav_item:hover {
@@ -517,12 +518,13 @@ li a {
 .dots-block {
   position: absolute;
   left: 50%;
-  bottom: 30px;
+  bottom: 22px;
   transform: translateX(-50%);
 }
 
 .dots-item {
   display: inline-block;
+  vertical-align: top;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -685,7 +687,8 @@ li a {
 
 .price-button {
 	position: relative;
-	display: inline-block;
+  display: inline-block;
+  vertical-align: top;
   width: 120px;
   height: 37px;
 	line-height: 2;
@@ -707,7 +710,8 @@ li a {
 	position: absolute;
 	content: '';
 	z-index: -1;
-	display: inline-block;
+  display: inline-block;
+  vertical-align: top;
 	left: 100%;
 	width: 2.3em;
 	height: 2.3em;
@@ -903,12 +907,14 @@ li a {
 
 .text_servises {
   display: inline-block;
+  vertical-align: top;
   font-size: 30px;
   font-family: 'Cuprum', sans-serif;
 }
 
 .text_servises_description {
   display: inline-block;
+  vertical-align: top;
   font-size: 13px;
   font-family: 'PT Sans', sans-serif;
   margin-top: 40px;
@@ -1291,6 +1297,7 @@ li a {
 .mfp-container:before {
   content: '';
   display: inline-block;
+  vertical-align: top;
   height: 100%;
   vertical-align: middle;
 }
@@ -1302,6 +1309,7 @@ li a {
 .mfp-content {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   vertical-align: middle;
   margin: 0 auto;
   text-align: left;
