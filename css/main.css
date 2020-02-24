@@ -260,9 +260,6 @@ a {
 .description-item:nth-child(3) {
   position: relative;
   left: 48px;
-  /* background-image: url(../img/icon-login.png); */
-  /* width: 20px; */
-  /* height: 17px; */
 }
 
 .img-login {
@@ -278,7 +275,7 @@ a {
   display: flex;
   font-size: 14px;
   color: #32425c;
-  top: -7px;
+  margin-top: 10px;
 }
 
 .phone_number {
@@ -289,6 +286,10 @@ a {
   font-size: 21px;
   justify-content: center;
   padding: 10px 0px;
+}
+
+.phone_number a {
+  color: #ee3643;
 }
 
 .margin-phone-panel {
@@ -595,6 +596,7 @@ li a {
   font-family: 'Cuprum', sans-serif;
   background-color: #f9f5f0;
   align-items: center;
+  justify-content: space-between;
 }
 
 .height-flex-row2 {
@@ -626,9 +628,10 @@ li a {
 .popular-items-btsn {
   position: relative;
   margin-left: auto;
-  right: 26px;
+
   background-color:#ee3643;
   border-radius: 3px;
+  margin-right: 26px;
 }
 
 .popular-items-btsn:hover {
@@ -915,9 +918,13 @@ li a {
 .text_servises_description {
   display: inline-block;
   vertical-align: top;
+
+  margin-top: 40px;
+}
+
+.text_servises_description-font {
   font-size: 13px;
   font-family: 'PT Sans', sans-serif;
-  margin-top: 40px;
 }
 
 .size_color_delivery {
@@ -928,11 +935,16 @@ li a {
 
 .description-content {
   position: relative;
-  font-family: 'PT Sans', sans-serif;
+
   color: #000000;
   font-size: 13px;
   line-height: 1.6;
   top: 32px;
+}
+
+.description-content-font {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
 }
 
 .img-tabs-content-1 {
@@ -1124,7 +1136,7 @@ li a {
   justify-content: center;
   position: relative;
   box-shadow: 0 5px 0 #b52933;
-  z-index: 2;
+
 }
 
 .footer-row {
@@ -1149,12 +1161,13 @@ li a {
 }
 
 .adress-footer {
+  display: flex;
+  flex-direction: column;
   position: relative;
   font-size: 18px;
   font-family: 'Cuprum', sans-serif;
   color: #f1f5f7;
-  top: -31px;
-  left: 2px;
+  top: -30px;
 }
 
 .footer-row2 {
