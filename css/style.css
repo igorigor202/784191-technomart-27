@@ -322,7 +322,7 @@ a {
   display: flex;
   font-size: 14px;
   color: #32425c;
-  top: -6px;
+  margin-top: 10px;
 }
 
 .phone_number {
@@ -335,18 +335,15 @@ a {
   padding: 10px 0px;
 }
 
+.phone_number a {
+  color: #ee3643;
+}
+
 .icon-phone {
   position: relative;
   display: flex;
   right: 33px;
   top: 3px;
-}
-
-.icon-login:hover {
-  background-image: url(../img/icon-login2.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .icon-user:hover {
@@ -363,6 +360,12 @@ a {
   background-size: contain;
 }
 
+.icon-logout:active {
+  background: url(../img/icon-logout-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .my_orders:hover, .personal_area:hover {
   color: #ee3643;
 }
@@ -370,6 +373,8 @@ a {
 .my_orders:active, .personal_area:active, .name-user:active {
   color: #c5cad0;
 }
+
+
 /* БЛОК НАВИГАЦИИ МЕНЮ */
 
 ul, li {
@@ -512,7 +517,7 @@ li a {
   width: 220px;
 }
 
-.price-title {
+.block-price-range label {
   font-size: 17px;
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
@@ -741,6 +746,8 @@ p label {
   font-weight: bold;
 }
 
+
+
 p input {
   position: relative;
   border: 0;
@@ -965,12 +972,14 @@ p input {
 
 .title-about-perforator {
   font-size: 30px;
+
 }
 
 .about-perforator {
   position: relative;
   font-size: 13px;
   top: 40px;
+  line-height: 1.6;
 }
 
 .background-footer-1 {
@@ -992,6 +1001,11 @@ p input {
   height: 193px;
 }
 
+technomart-adress-footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .technomart-footer {
   display: flex;
   width: 220px;
@@ -1001,7 +1015,6 @@ p input {
   justify-content: center;
   position: relative;
   box-shadow: 0 5px 0 #b52933;
-  z-index: 2;
 }
 
 .footer-row {
@@ -1021,17 +1034,18 @@ p input {
   flex-direction: column;
   width: 545px;
   margin-left: auto;
-  margin-top: 40px;
-  margin-left: 173px;
+  margin-top: 43px;
+  margin-right: 20px;
 }
 
 .adress-footer {
+  display: flex;
+  flex-direction: column;
   position: relative;
   font-size: 18px;
   font-family: 'Cuprum', sans-serif;
   color: #f1f5f7;
-  top: -31px;
-  left: 2px;
+  margin-top: 47px;
 }
 
 .footer-row2 {
@@ -1043,7 +1057,7 @@ p input {
   font-size: 18px;
   color: #ffd180;
   justify-content: space-between;
-  padding-top: 45px;
+  margin-top: 45px;
   padding-left: 24px;
 }
 

@@ -310,24 +310,31 @@ a {
   top: 3px;
 }
 
-.description-item:nth-child(3):hover, .description-item:nth-child(4):hover {
-  color: #ee3643;
-}
 
-.img-login:hover {
+.description-item:nth-child(3):hover .img-login {
   background-image: url(../img/icon-login2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+.description-item:nth-child(3):active .img-login {
+  background-image: url(../img/icon-login.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.description-item:nth-child(3):hover, .description-item:nth-child(4):hover {
+  color: #ee3643;
+}
+
 .description-item:nth-child(3):active, .description-item:nth-child(4):active {
   color: #cacaca;
 }
 
-.img-login:active + .description-item:nth-child(3):active {
-  background-image: url(../img/icon-login.png);
-}
+
 /* БЛОК НАВИГАЦИИ МЕНЮ */
 
 ul, li {
@@ -781,7 +788,7 @@ li a {
 
 .text_buy-product {
   position: relative;
-  left:-10px;
+  left: -10px;
 }
 
 .add-bookmarks {
@@ -869,11 +876,18 @@ li a {
 
 .tabs-panel.active {
   display: block;
-  background: none;
 }
+
 
 .tabs {
   padding: 0;
+}
+
+.tabs-item.active .btsn-dwc {
+  background-color: #ffffff;
+  border-top: none;
+  border-bottom: none;
+  color: #32425c;
 }
 
 .btsn-dwc {
@@ -918,13 +932,14 @@ li a {
 .text_servises_description {
   display: inline-block;
   vertical-align: top;
-
   margin-top: 40px;
+  line-height: 1.6;
 }
 
 .text_servises_description-font {
   font-size: 13px;
   font-family: 'PT Sans', sans-serif;
+  line-height: 1.6;
 }
 
 .size_color_delivery {
@@ -935,7 +950,6 @@ li a {
 
 .description-content {
   position: relative;
-
   color: #000000;
   font-size: 13px;
   line-height: 1.6;
@@ -1013,6 +1027,11 @@ li a {
 .information-contacts-description {
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
+  line-height: 1.6;
+}
+
+.information-contacts-description-width {
+  width: 520px;
 }
 
 .information-contacts-margin {
@@ -1037,7 +1056,11 @@ li a {
   background-color:#ee3643;
   border-radius: 3px;
   width: 220px;
-  top: 30px;
+  margin-top: 35px;
+}
+
+.margin-information-btsn {
+  top: 5px;
 }
 
 .text_information-btsn {
@@ -1080,7 +1103,7 @@ li a {
 
 .popup-modal {
   position: relative;
-  margin-top: 28px;
+  margin-top: 45px;
 }
 
 .close {
@@ -1127,6 +1150,11 @@ li a {
   height: 193px;
 }
 
+technomart-adress-footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .technomart-footer {
   display: flex;
   width: 220px;
@@ -1136,7 +1164,6 @@ li a {
   justify-content: center;
   position: relative;
   box-shadow: 0 5px 0 #b52933;
-
 }
 
 .footer-row {
@@ -1156,8 +1183,8 @@ li a {
   flex-direction: column;
   width: 545px;
   margin-left: auto;
-  margin-top: 40px;
-  margin-left: 173px;
+  margin-top: 43px;
+  margin-right: 20px;
 }
 
 .adress-footer {
@@ -1167,7 +1194,7 @@ li a {
   font-size: 18px;
   font-family: 'Cuprum', sans-serif;
   color: #f1f5f7;
-  top: -30px;
+  margin-top: 47px;
 }
 
 .footer-row2 {
@@ -1179,7 +1206,7 @@ li a {
   font-size: 18px;
   color: #ffd180;
   justify-content: space-between;
-  padding-top: 45px;
+  margin-top: 45px;
   padding-left: 24px;
 }
 
@@ -1266,11 +1293,6 @@ li a {
 .color-mail-website:hover, .color-mail-website:hover {
   text-decoration: underline;
 }
-
-
-
-
-
 
 
 /* ПЛАГИН ДЛЯ POPUP */
