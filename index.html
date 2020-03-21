@@ -5,6 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -30,7 +31,7 @@
                   <img src="img/icon-basket1.png" class="header-icon-img  icon-basket" width="16" height="15" alt="Корзина">
                   <span class="header-text">Корзина: 0</span>
                 </a>
-                <a href="" class="header-btns-item" id="green-btsn">
+                <a href="" class="header-btns-item green-btsn">
                   <span class="header-text">Оформить заказ</span>
                 </a>
               </div>
@@ -150,8 +151,8 @@
               <img class="slides-item" src="img/slider22.png" width="620" height="266" alt="Второй слайд">
             </div>
             <div class="buttons-block">
-              <div id="left-button"><img src="img/icon-left.png" alt="Слайд влево"></div>
-              <div id="right-button"><img src="img/icon-right.png" alt="Слайд вправо"></div>
+              <button id="left-button" type="button"><img src="img/icon-left.png" width="22" height="40" alt="Слайд влево"></button>
+              <button id="right-button" type="button"><img src="img/icon-right.png" width="22" height="40" alt="Слайд вправо"></button>
             </div>
             <div class="dots-block">
               <div class="dots-item active"></div>
@@ -199,7 +200,8 @@
       <div class="flex-product">
         <div class="product-box">
           <div class="hidden-buttons">
-            <a href="#" class="buy-product">
+            
+            <a href="#modal-basket" class="buy-product popup-modal">
               <img src="img/icon-basket1.png" class="basket-left-top  icon-basket" width="16" height="15" alt="Корзина">
               <span class="text_buy-product">КУПИТЬ</span>
             </a>
@@ -214,7 +216,7 @@
         </div>
         <div class="product-box">
           <div class="hidden-buttons">
-            <a href="#" class="buy-product">
+            <a href="#modal-basket" class="buy-product popup-modal">
               <img src="img/icon-basket1.png" class="basket-left-top  icon-basket" width="16" height="15" alt="Корзина">
               <span class="text_buy-product">КУПИТЬ</span>
             </a>
@@ -229,7 +231,7 @@
         </div>
         <div class="product-box">
           <div class="hidden-buttons">
-            <a href="#" class="buy-product">
+            <a href="#modal-basket" class="buy-product popup-modal">
               <img src="img/icon-basket1.png" class="basket-left-top  icon-basket" width="16" height="15" alt="Корзина">
               <span class="text_buy-product">КУПИТЬ</span>
             </a>
@@ -244,7 +246,7 @@
         </div>
         <div class="product-box">
           <div class="hidden-buttons">
-            <a href="#" class="buy-product">
+            <a href="#modal-basket" class="buy-product popup-modal">
               <img src="img/icon-basket1.png" class="basket-left-top  icon-basket" width="16" height="15" alt="Корзина">
               <span class="text_buy-product">КУПИТЬ</span>
             </a>
@@ -270,25 +272,25 @@
           <img src="img/bosch.png" width="126" height="37" alt="Фирма Bosch">
         </a>
         <a href="#" class="manufacturers-box">
-          <img src="img/Makita.png" width="123" height="40" alt="Фирма Makita">
+          <img src="img/makita.png" width="123" height="40" alt="Фирма Makita">
         </a>
         <a href="#" class="manufacturers-box">
-          <img src="img/DeWALT.png" width="146" height="44" alt="Фирма DeWALT">
+          <img src="img/dewalt.png" width="146" height="44" alt="Фирма dewalt">
         </a>
         <a href="#" class="manufacturers-box">
-          <img src="img/Interskol.png" width="200" height="88" alt="Фирма Интерскол">
+          <img src="img/interskol.png" width="200" height="88" alt="Фирма Интерскол">
         </a>
         <a href="#" class="manufacturers-box margin-flex-row2">
-          <img src="img/Hitachi.png" width="169" height="31" alt="Фирма Hitachi">
+          <img src="img/hitachi.png" width="169" height="31" alt="Фирма hitachi">
         </a>
         <a href="#" class="manufacturers-box margin-flex-row2">
-          <img src="img/LG.png" width="121" height="73" alt="Фирма LG">
+          <img src="img/lg.png" width="121" height="73" alt="Фирма lg">
         </a>
         <a href="#" class="manufacturers-box margin-flex-row2">
-          <img src="img/AEG.png" width="151" height="96" alt="Фирма AEG">
+          <img src="img/aeg.png" width="151" height="96" alt="Фирма aeg">
         </a>
         <a href="#" class="manufacturers-box margin-flex-row2">
-          <img src="img/Metabo.png" width="204" height="69" alt="Фирма Metabo">
+          <img src="img/metabo.png" width="204" height="69" alt="Фирма metabo">
         </a>
       </div>
     </section>
@@ -351,7 +353,9 @@
       <div class="contacts">
         <div class="information-company-contacts">КОНТАКТЫ</div>
         <div class="information-contacts-description information-contacts-margin">Вы можете забрать товар сами,<p>заехав в наш офис:</p></div>
-        <a class="popup-modal" href="#test-modal">
+        
+        
+        <a href="#test-modal" class="popup-modal">
           <img src="img/map-contacts.png" width="300" height="158" alt="Карта офиса">
         </a>
         <div class="margin-information-btsn information-btsn contacts-btsn">
@@ -359,6 +363,8 @@
             <span class="text_information-btsn">Заблудились? Напишите нам!</span>
           </a>
         </div>
+
+
       </div>
     </section>
     <footer>
@@ -453,6 +459,8 @@
         </div>
       </div>
     </footer>
+
+
     <div id="test-modal" class="mfp-hide white-popup-block">
       <img src="img/big-map.png" class="big-map" width="950" height="446" alt="Большая карта">
       <a href="#" class="popup-modal-dismiss close">
@@ -460,6 +468,8 @@
       </a>
       <div class="information-contacts-margin"></div>
     </div>
+
+
     <div id="modal-callback" class="mfp-hide white-popup-block">
       <form class="decor" action="https://echo.htmlacademy.ru" method="post">
         <a href="#" class="popup-modal-dismiss close-callback">
@@ -475,11 +485,32 @@
           <span class="title-message">Текст Письма:</span>
           <textarea id="text-information" name="text-information"  placeholder="В свободной форме" rows="3"></textarea>
           <div class="block-submit">
-            <input type="submit" value="ОТПРАВИТЬ">
+            <button type="submit">ОТПРАВИТЬ</button>
           </div>
         </div>
       </form>
     </div>
+
+    <div id="modal-basket" class="mfp-hide white-popup-block">
+      <div class="modal-basket-place">
+        <div class="modal-basket-place-text">Товар добавлен в корзину!</div>
+        <img src="img/img-ok.png" class="icon-ok" width="66" height="66" alt="Иконка ок">
+        <div class="gray-background">
+          <div class="flex-gray-background">
+            <a href="#" class="basket-checkout">
+              <span class="text_checkout">ОФОРМИТЬ ЗАКАЗ</span>
+            </a>
+            <a href="#">
+              <span class="text_continue-shopping">ПРОДОЛЖИТЬ ПОКУПКИ</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="popup-modal-dismiss close-basket-place">
+        <img src="img/close.png" width="21" height="21" alt="Иконка заркыть">
+      </a>
+    </div>
+
     <script src="js/slider.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/magnific-popup.js"></script>
